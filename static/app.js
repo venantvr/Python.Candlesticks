@@ -2,8 +2,8 @@ const startTime = new Date('2023-05-01').getTime(); // Début de la période
 const endTime = new Date('2023-05-02').getTime(); // Fin de la période
 
 const data_1h = [
-    { x: new Date('2023-05-01 03:00:00').getTime(), y: [51.5, 53, 50.5, 52] },
-    { x: new Date('2023-05-01 04:00:00').getTime(), y: [52, 55.5, 51, 54.5] },
+    { x: new Date('2023-05-01 03:00:00').getTime(), y: [51.5, 53, 50.5, 52] }, // UTC/TZ
+    { x: new Date('2023-05-01 04:00:00').getTime(), y: [52, 55.5, 51, 54.5] }, // UTC/TZ
 ];
 
 const options1h = {
@@ -31,8 +31,8 @@ const options1h = {
 const SIX_HOURS_IN_MS = 6 * 60 * 60 * 1000; // 6 heures en millisecondes
 
 data_12h = [
-    { x: new Date('2023-05-01 02:00:00').getTime(), y: [51.5, 62, 48.5, 59] },
-    { x: new Date('2023-05-01 14:00:00').getTime(), y: [59, 64.5, 56, 61.5] },
+    { x: new Date('2023-05-01 02:00:00').getTime(), y: [51.5, 62, 48.5, 59] }, // UTC/TZ
+    { x: new Date('2023-05-01 14:00:00').getTime(), y: [59, 64.5, 56, 61.5] }, // UTC/TZ
     // Plus de données ici...
 ];
 
